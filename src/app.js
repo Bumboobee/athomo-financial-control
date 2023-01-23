@@ -42,7 +42,11 @@ const App = () => {
       tableTd.appendChild(textTd);
 
       document.getElementById("main-table").appendChild(tableTr);      
-    } else {    
+    } else { 
+      const elements = document.getElementsByClassName("without-total");
+      while (elements.length > 0) elements[0].remove();
+    }
+  }, [transactionsList]);  
 
   const handleAdd = (transaction) => {
     const newArrayTransactions = [...transactionsList, transaction];
@@ -61,5 +65,6 @@ const App = () => {
     </>
   );
 };
+
 
 export default App;
