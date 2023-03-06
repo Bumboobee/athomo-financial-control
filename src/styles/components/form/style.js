@@ -28,7 +28,9 @@ export const InputContent = styled.div`
     flex-direction: column;
 `;
 
-export const Label = styled.label``;
+export const Label = styled.label`
+    opacity: .75;
+`;
 
 export const Input = styled.input`
     outline: none;
