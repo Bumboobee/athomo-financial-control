@@ -29,7 +29,7 @@ export const InputContent = styled.div`
 `;
 
 export const Label = styled.label`
-    opacity: .7;
+    opacity: .75;
 `;
 
 export const Input = styled.input`
